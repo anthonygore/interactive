@@ -1,0 +1,10 @@
+{
+  "title": "Ref vs Reactive",
+  "template": "vue",
+  "dependencies": {
+    "vue": "^3.2.16"
+  },
+  "lessons": [
+    "01"
+  ]
+}

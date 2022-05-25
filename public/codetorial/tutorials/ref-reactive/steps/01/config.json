@@ -1,0 +1,11 @@
+{
+  "title": "Introduction",
+  "content": "content.md",
+  "files": [
+    "public/index.html",
+    "src/main.js",
+    "src/App.vue"
+  ],
+  "openFile": "src/App.vue",
+  "noSolution": true
+}
