@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" class="fixed overflow-hidden h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= title %></title>
+  <link href="<%= faviconUrl %>" rel="shortcut icon" type="image/x-icon" />
+  <% if (!local) { %>
+  <link href="<%= appUrl %>/index.css" rel="stylesheet" type="text/css" />
+  <% } %>
+</head>
+<body class="fixed overflow-hidden w-full min-h-full flex">
+<div id="app" class="w-full"></div>
+<script type="module">
+  window.isDev = '<%= isDev %>' === 'true'
+  window.baseUrl = '<%= baseUrl %>'
+  if (import.meta.hot) {
+    const event = new Event('data-updated')
+    import.meta.hot.on('data-updated', () => {
+      window.dispatchEvent(event)
+    })
+  }
+</script>
+<% if (local) { %>
+<script type="module" src="<%= appUrl %>/src/main.js"></script>
+<% } else { %>
+<script type="module" src="<%= appUrl %>/index.js"></script>
+<% } %>
+</body>
+</html>
