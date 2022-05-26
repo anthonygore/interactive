@@ -8,6 +8,7 @@
   <% if (!local) { %>
   <link href="<%= appUrl %>/index.css" rel="stylesheet" type="text/css" />
   <% } %>
+  <% if (isDev) { %>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -15,12 +16,15 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-PCFP2XP');</script>
   <!-- End Google Tag Manager -->
+  <% } %>
 </head>
 <body class="fixed overflow-hidden w-full min-h-full flex">
+<% if (isDev) { %>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCFP2XP"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+<% } %>
 <div id="app" class="w-full"></div>
 <script type="module">
   window.isDev = '<%= isDev %>' === 'true'

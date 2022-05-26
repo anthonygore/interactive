@@ -1,3 +1,9 @@
 window.addEventListener('page-view', ({ detail }) => {
-  // Use this to trigger analytics or whatever
+  if (window.dataLayer) {
+    window.dataLayer.push({
+      'event': 'virtualPageview',
+      'pageUrl': window.location.href,
+      'pageTitle': detail.title
+    });
+  }
 })
