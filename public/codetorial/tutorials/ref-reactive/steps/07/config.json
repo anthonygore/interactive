@@ -1,5 +1,5 @@
 {
-  "title": "ref or reactive?",
+  "title": "Don't destructure reactive",
   "content": "content.md",
   "files": [
     "public/index.html",

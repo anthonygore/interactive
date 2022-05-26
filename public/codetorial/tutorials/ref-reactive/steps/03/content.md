@@ -1,6 +1,7 @@
-Note that a ref is an object where the reactive data is available through the `.value` property.
+It's important to note that a ref is an object where the reactive data is available through the `.value` property.
 
 ```js
+const count = ref(0)
 count === 0 // false
 count.value === 0 // true
 ```
@@ -14,7 +15,9 @@ In the template, you *do not* access the reactive variable through the `value` p
 <h1>{{ count }}</h1> <!--correct-->
 ```
 
-In the code editor, we've moved the click handler into a method and out of the template, therefore we increment `count.value` not `count` like we did in the template.
+In the code editor, we've moved the click handler into a method `increment` and out of the template. 
+
+Note that this method uses `count.value` not `count` like we did in the template.
 
 ```js
 const increment = () => {

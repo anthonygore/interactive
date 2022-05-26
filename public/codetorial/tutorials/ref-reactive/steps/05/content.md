@@ -10,7 +10,7 @@ const data = reactive({
 })
 ```
 
-The advantage of `reactive` is that it doesn’t require you to access the `value` subproperty. 
+One advantage of `reactive` is that it doesn’t require a `value` property. 
 
 ```js
 data.name === 'Peter Griffin' // true
