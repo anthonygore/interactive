@@ -1,5 +1,5 @@
 {
-  "title": "Introduction",
+  "title": "What is reactive?",
   "content": "content.md",
   "files": [
     "public/index.html",
@@ -7,6 +7,5 @@
     "src/App.vue"
   ],
   "openFile": "src/App.vue",
-  "noSolution": true,
-  "noEditor": true
+  "noSolution": true
 }

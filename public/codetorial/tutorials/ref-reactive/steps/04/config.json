@@ -1,5 +1,5 @@
 {
-  "title": "Introduction",
+  "title": "Task: fix ref",
   "content": "content.md",
   "files": [
     "public/index.html",
@@ -7,6 +7,6 @@
     "src/App.vue"
   ],
   "openFile": "src/App.vue",
-  "noSolution": true,
-  "noEditor": true
+  "baseFolder": "base",
+  "solutionFolder": "solution"
 }
