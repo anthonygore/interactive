@@ -2,5 +2,7 @@
   "title": "Vue.js Developers",
   "courses": [
     "ref-reactive"
-  ]
+  ],
+  "homeUrl": "https://interactive.vuejsdevelopers.com",
+  "logoUrl": "https://vuejsdevelopers.com/images/logo_graphic_no_base_94x94.png"
 }
