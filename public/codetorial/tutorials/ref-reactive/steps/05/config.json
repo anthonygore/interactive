@@ -1,5 +1,5 @@
 {
-  "title": "What is reactive?",
+  "title": "Task: convert ref to reactive",
   "content": "content.md",
   "files": [
     "public/index.html",
@@ -7,5 +7,6 @@
     "src/App.vue"
   ],
   "openFile": "src/App.vue",
-  "noSolution": true
+  "baseFolder": "base",
+  "solutionFolder": "solution"
 }

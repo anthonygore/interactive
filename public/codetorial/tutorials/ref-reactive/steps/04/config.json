@@ -1,5 +1,5 @@
 {
-  "title": "Task: fix broken ref",
+  "title": "What is reactive?",
   "content": "content.md",
   "files": [
     "public/index.html",
@@ -7,6 +7,5 @@
     "src/App.vue"
   ],
   "openFile": "src/App.vue",
-  "baseFolder": "base",
-  "solutionFolder": "solution"
+  "noSolution": true
 }

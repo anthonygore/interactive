@@ -1,5 +1,5 @@
 {
-  "title": "Ref vs Reactive",
+  "title": "Ref or Reactive? Learn Once And For All!",
   "template": "vue",
   "dependencies": {
     "vue": "^3.2.16"
@@ -11,8 +11,12 @@
     "04",
     "05",
     "06",
-    "07",
-    "08",
-    "09"
-  ]
+    "07"
+  ],
+  "author": {
+    "name": "Anthony Gore",
+    "avatarUrl": ""
+  },
+  "length": "5 to 10 mins",
+  "topics": ["vue3", "javascript"]
 }

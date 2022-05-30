@@ -1,5 +1,5 @@
 {
-  "title": "Task: convert ref to reactive",
+  "title": "Don't destructure reactive",
   "content": "content.md",
   "files": [
     "public/index.html",

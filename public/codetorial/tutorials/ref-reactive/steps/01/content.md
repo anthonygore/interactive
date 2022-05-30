@@ -1,14 +1,11 @@
-*Vue 3’s Composition API provides two main ways of declaring reactive data: `ref` and `reactive`. What’s the difference between these and which should you use?*
+To create a single reactive variable with the Composition API you can use `ref`. 
 
-Welcome to this interactive tutorial where you'll learn by coding!
+You can initialize a ref with any JavaScript primitive e.g. `String`, `Number`, `Object`, etc.
 
-Here what we'll cover:
+```js
+const count = ref(0);
+```
 
-- What’s `ref`?
-- What’s `reactive`?
-- What are the pros and cons of each?
-- When should you use `ref` vs `reactive`?
+Since `count` is a reactive variable, changing its value in JavaScript will cause a re-render of the component (that's the main use case of reactivity in Vue, after all).
 
-**This tutorial will take 5-10 mins to complete**.
-
-Ready? Click "Complete and continue" and we’ll get straight into it.
+Make sure you have opened the *Preview* window of the code editor. Then press the "Increment" button and you’ll see the value of `count` increases. This is because it is incremented by the button click handler (line 16).

@@ -1,12 +1,6 @@
 {
-  "title": "Don't destructure reactive",
+  "title": "ref or reactive?",
   "content": "content.md",
-  "files": [
-    "public/index.html",
-    "src/main.js",
-    "src/App.vue"
-  ],
-  "openFile": "src/App.vue",
-  "baseFolder": "base",
-  "solutionFolder": "solution"
+  "noEditor" : true,
+  "noSolution": true
 }

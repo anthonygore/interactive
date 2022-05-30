@@ -1,23 +1,18 @@
 <script>
-import { reactive } from 'vue'
+import { reactive } from 'vue';
 
 export default {
   setup() {
     const data = reactive({
-      count: 0
+      msg: 'Hello World!'
     })
-    const increment = () => {
-      data.count++
-    }
     return {
       data,
-      increment
-    }
-  }
-}
+    };
+  },
+};
 </script>
 
 <template>
-  <h1>{{ data.count }}</h1>
-  <button @click="increment">Increment</button>
+  <h1>{{ data.msg }}</h1>
 </template>
